@@ -1,5 +1,10 @@
 # vue-app
 
+deploying at:
+
+https://jsalacoro.github.io/vue-map-app/
+
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
