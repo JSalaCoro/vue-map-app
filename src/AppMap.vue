@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div class="cell cell-map">
+      Map item
       <MapComponent/>
     </div>
     <div class="cell cell-edit">
