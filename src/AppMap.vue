@@ -1,27 +1,31 @@
 <template>
   <div id="app">
     <div class="cell cell-map">
-      Map item
+      Map item 
       <MapComponent/>
     </div>
     <div class="cell cell-edit">
-      Edit
+      Landings by port
+      <LanByPortChart/>
     </div>
     <div class="cell cell-inspect">
-      Inspect
+      Landings yearly evolution
     </div>
   </div>
 </template>
 
 <script>
 import MapComponent from './components/MapComponent.vue';
+import LanByPortChart from './components/LanByPortChartcomponent.vue'
 
   export default {
     name: 'AppMap',
     components: {
-      MapComponent
+      MapComponent,
+      LanByPortChart
     }
   }
+
 </script>
 
 <style>
