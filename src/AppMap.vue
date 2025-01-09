@@ -10,6 +10,7 @@
     </div>
     <div class="cell cell-inspect">
       Landings yearly evolution
+      <LandingsYearlyChartComponent/>
     </div>
   </div>
 </template>
@@ -17,12 +18,14 @@
 <script>
 import MapComponent from './components/MapComponent.vue';
 import LandingsPortChartComponent from './components/LandingsPortChartComponent.vue';
+import LandingsYearlyChartComponent from './components/LandingsYearlyChartComponent.vue';
   
 export default {
     name: 'AppMap',
     components: {
       MapComponent,
-      LandingsPortChartComponent
+      LandingsPortChartComponent,
+      LandingsYearlyChartComponent
     }
   }
 

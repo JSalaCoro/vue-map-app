@@ -1,4 +1,4 @@
-export const NEP_cat_byport_2023_json_data = {
+export const NEP_cat_byport_2023_data = {
   data:[
   {
     "portcode": 64710,
@@ -122,4 +122,4 @@ export const NEP_cat_byport_2023_json_data = {
   }
   ]
 };
-export default NEP_cat_byport_2023_json_data;
+export default NEP_cat_byport_2023_data;

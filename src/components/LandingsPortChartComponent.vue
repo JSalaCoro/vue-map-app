@@ -1,13 +1,11 @@
-
-
 <template>
         <Bar :data="data" :options="options" />
 </template>
   
   <script>
- import {Chart as ChartJS,  Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale} from 'chart.js'
+import {Chart as ChartJS,  Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale} from 'chart.js'
 import { Bar } from 'vue-chartjs'
-import NEP_cat_byport_2023_json_data from '@/data/NEP_cat_byport_2023_json'
+import NEP_cat_byport_2023_data from '@/data/landings/NEP_cat_byport_2023'
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
@@ -19,16 +17,17 @@ export default {
   data() {
     return {
       data: {
-        labels: NEP_cat_byport_2023_json_data.data.map(row => row.Name),
+        labels: NEP_cat_byport_2023_data.data.map(row => row.Name),
         datasets: [{ 
-            data: NEP_cat_byport_2023_json_data.data.map(row => row.kg),
+            data: NEP_cat_byport_2023_data.data.map(row => row.kg),
+            backgroundColor: "#7BBC8C" 
             }]
       },
       options: {
         responsive: true,
         indexAxis: 'y',
         plugins: {legend: {display: false}},
-        scales: {x:{title: {text:'Species landings (Kg)', display: true}}},
+        scales: {x:{title: {text:'Species landings 2023 (Kg)', display: true}}},
         maintainAspectRatio: false
       }
     }

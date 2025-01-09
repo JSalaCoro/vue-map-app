@@ -32,3 +32,6 @@ coverage
 
 #database
 dbQueries*
+
+#data
+map

@@ -9,7 +9,7 @@
     import Map from 'ol/Map'
     import TileLayer from 'ol/layer/Tile'
     import OSM from 'ol/source/OSM'
-  
+
     // importing the OpenLayers stylesheet is required for having
     // good looking buttons!
     import 'ol/ol.css'
@@ -20,6 +20,7 @@
       props: {},
       mounted() {
         // this is where we create the OpenLayers map
+        console.log('hello map!')
         new Map({
           // the map will be created using the 'map-root' ref
           target: this.$refs['map-root'],
@@ -27,13 +28,14 @@
             // adding a background tiled layer
             new TileLayer({
               source: new OSM() // tiles are served by OpenStreetMap
-            }),
+            })
           ],
           // the map view will initially show the whole world
           view: new View({
-            zoom: 0,
-            center: [0, 0],
-            constrainResolution: true
+            zoom: 7.5,
+            center: [239298.956079, 5043620.874369],
+            constrainResolution: true,
+            minZoom:7.5
           }),
         })
       },
