@@ -34,13 +34,12 @@ npm run build
 ```
 ## deploy in github pages
 
+```sh
 npm run deploy
+```
 
-## tutorials followed
 
-vue docs
-
-## My guides:
+### My guides:
 integration with openlayers:
 https://dev.to/camptocamp-geo/integrating-an-openlayers-map-in-vue-js-a-step-by-step-guide-2n1p
 
