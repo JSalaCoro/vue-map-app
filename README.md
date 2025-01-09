@@ -32,6 +32,9 @@ npm run dev
 ```sh
 npm run build
 ```
+## deploy in github pages
+
+npm run deploy
 
 ## tutorials followed
 
