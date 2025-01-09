@@ -43,3 +43,5 @@ https://dev.to/camptocamp-geo/integrating-an-openlayers-map-in-vue-js-a-step-by-
 
 integration with ChartJS:
 https://vue-chartjs.org/guide/
+https://www.digitalocean.com/community/tutorials/vuejs-vue-chart-js
+
