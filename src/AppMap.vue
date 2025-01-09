@@ -6,7 +6,7 @@
     </div>
     <div class="cell cell-edit">
       Landings by port
-      <LanByPortChart/>
+      <LandingsPortChartComponent/>
     </div>
     <div class="cell cell-inspect">
       Landings yearly evolution
@@ -16,13 +16,13 @@
 
 <script>
 import MapComponent from './components/MapComponent.vue';
-import LanByPortChart from './components/LanByPortChartcomponent.vue'
-
-  export default {
+import LandingsPortChartComponent from './components/LandingsPortChartComponent.vue';
+  
+export default {
     name: 'AppMap',
     components: {
       MapComponent,
-      LanByPortChart
+      LandingsPortChartComponent
     }
   }
 
@@ -48,7 +48,9 @@ import LanByPortChart from './components/LanByPortChartcomponent.vue'
 
   .cell {
     border-radius: 4px;
-    background-color: lightgrey;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
   }
 
   .cell-map {
@@ -58,6 +60,7 @@ import LanByPortChart from './components/LanByPortChartcomponent.vue'
   }
 
   .cell-edit {
+    height: 400px;
     grid-column: 2;
     grid-row: 1;
   }

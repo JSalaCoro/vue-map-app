@@ -1,9 +1,7 @@
 
 
 <template>
-    <div ref="map-root"
-         style="width: 100%; height: 100%">
-    </div>
+    <div ref="map-root" style="width: 100%; height: 100%"></div>
   </template>
   
   <script>
@@ -31,7 +29,6 @@
               source: new OSM() // tiles are served by OpenStreetMap
             }),
           ],
-  
           // the map view will initially show the whole world
           view: new View({
             zoom: 0,
