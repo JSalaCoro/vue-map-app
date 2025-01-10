@@ -19,7 +19,7 @@ export default {
       data: {
         labels: NEP_cat_byport_2023_data.data.map(row => row.Name),
         datasets: [{ 
-            data: NEP_cat_byport_2023_data.data.map(row => row.kg),
+            data: NEP_cat_byport_2023_data.data.map(row => row.eu),
             backgroundColor: "#7BBC8C" 
             }]
       },
@@ -29,9 +29,9 @@ export default {
         plugins: {legend: {display: false},
                   title: {
                     display:true,
-                    text: 'Species landings by port 2023'
+                    text: 'Species income by port 2023'
                   }},
-        scales: {x:{title: {text:'Kg', display: true}}},
+        scales: {x:{title: {text:'Euros (€)', display: true}}},
         maintainAspectRatio: false
       }
     }

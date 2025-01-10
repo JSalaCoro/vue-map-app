@@ -27,8 +27,12 @@ export default {
       options: {
         responsive: true,
         indexAxis: 'x',
-        plugins: {legend: {display: false}},
-        scales: {y:{title: {text:'Species landings (Kg)', display: true}}},
+        plugins: {legend: {display: false},
+                  title: {
+                    text:'Species landings evolution (Catalunya)',
+                    display:true
+                  }},
+        scales: {y:{title: {text:'Kg', display: true}}},
         maintainAspectRatio: false
       }
     }

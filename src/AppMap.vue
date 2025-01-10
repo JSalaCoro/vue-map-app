@@ -6,6 +6,9 @@
     <div class="cell cell-edit">
       <LandingsPortChartComponent/>
     </div>
+    <div class="cell cell-edit-2">
+      <EuPortChartComponent/>
+    </div>
     <div class="cell cell-inspect">
       <LandingsYearlyChartComponent/>
     </div>
@@ -16,13 +19,15 @@
 import MapComponent from './components/MapComponent.vue';
 import LandingsPortChartComponent from './components/LandingsPortChartComponent.vue';
 import LandingsYearlyChartComponent from './components/LandingsYearlyChartComponent.vue';
+import EuPortChartComponent from './components/EuPortChartComponent.vue'
   
 export default {
     name: 'AppMap',
     components: {
       MapComponent,
       LandingsPortChartComponent,
-      LandingsYearlyChartComponent
+      LandingsYearlyChartComponent,
+      EuPortChartComponent
     }
   }
 
@@ -63,6 +68,12 @@ export default {
   .cell-edit {
     height: 100%;
     grid-column: 2 ;
+    grid-row: 1 / 3;
+  }
+
+  .cell-edit-2 {
+    height: 100%;
+    grid-column: 3 ;
     grid-row: 1 / 3;
   }
 
