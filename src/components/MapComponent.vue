@@ -9,12 +9,16 @@
     import Map from 'ol/Map'
     import TileLayer from 'ol/layer/Tile'
     import OSM from 'ol/source/OSM'
+    import {Vector as VectorSource} from 'ol/source.js';
     import Static from 'ol/source/ImageStatic.js';
     import ImageLayer from 'ol/layer/Image.js';
+    import GeoJSON from 'ol/format/GeoJSON.js';
 
     // importing the OpenLayers stylesheet is required for having
     // good looking buttons!
     import 'ol/ol.css'
+import { Source } from 'ol/source';
+import VectorLayer from 'ol/layer/Vector';
   
     export default {
       name: 'MapContainer',
@@ -22,9 +26,16 @@
       props: {},
       mounted() {
         // this is where we create the OpenLayers map
-
+        /*
+        const portsSource = new VectorSource({
+          features: new GeoJSON().readFeatures(
+            source: 'http://localhost:5173/vue-map-app/src/data/map/ports.geojson' //this is not working
+          )
+        })
+*/
         const pngSource = new Static({
           url: 'http://localhost:5173/vue-map-app/src/data/map/NEP_2023.png',
+          //need to change url to be deployed in github pages
           imageExtent: [-849.770, 4862430.787, 629354.408, 5308029.701]
         })
 
@@ -39,8 +50,12 @@
             new ImageLayer({
               source: pngSource
             })
+            /*,
+            new VectorLayer({
+              source: portsSource
+            })
+              */
           ],
-          // the map view will initially show the whole world
           view: new View({
             zoom: 7.5,
             center: [239298.956079, 5043620.874369],

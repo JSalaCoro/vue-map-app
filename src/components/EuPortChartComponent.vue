@@ -20,7 +20,7 @@ export default {
         labels: NEP_cat_byport_2023_data.data.map(row => row.Name),
         datasets: [{ 
             data: NEP_cat_byport_2023_data.data.map(row => row.eu),
-            backgroundColor: "#7BBC8C" 
+            backgroundColor: "#496CAD" 
             }]
       },
       options: {
