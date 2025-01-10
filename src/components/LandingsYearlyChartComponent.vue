@@ -28,7 +28,8 @@ export default {
         responsive: true,
         indexAxis: 'x',
         plugins: {legend: {display: false}},
-        scales: {y:{title: {text:'Species landings (Kg)', display: true}}}
+        scales: {y:{title: {text:'Species landings (Kg)', display: true}}},
+        maintainAspectRatio: false
       }
     }
   }
