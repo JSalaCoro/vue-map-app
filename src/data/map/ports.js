@@ -1,4 +1,4 @@
-{
+export const portsData = {
 "type": "FeatureCollection",
 "name": "ports",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
@@ -20,3 +20,5 @@
 { "type": "Feature", "properties": { "portcode": 63110, "Name": "Les Cases d'Alcanar", "lat": 40.55272, "lon": 0.53077, "kg": 96.75, "eu": 4709.55 }, "geometry": { "type": "Point", "coordinates": [ 0.53077, 40.55272 ] } }
 ]
 }
+
+export default portsData;
